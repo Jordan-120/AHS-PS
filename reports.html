@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reports</title>
+  <link rel="icon" type="image/jpeg" href="img/SSlogo.jpg" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" href="stylesheet.css" />
+  <style>
+    .content-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 2rem;
+      margin: 2rem auto;
+      max-width: 1200px;
+      padding: 0 2rem;
+    }
+
+    .info-box {
+      flex: 1;
+      background-color: #2a2a2a;
+      border: 2px solid #f4b400;
+      padding: 1.5rem;
+      color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .info-box h3 {
+      margin-top: 0;
+      color: #f4b400;
+    }
+
+    .info-box ul {
+      padding-left: 1.2rem;
+      list-style-type: disc;
+    }
+
+    .flowchart-img {
+      flex: 1;
+      text-align: center;
+    }
+
+    .flowchart-img img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>AHS Protective Services Unofficial Guide</h1>
+    <p>Reports SOP</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Appointment</a>
+    <a href="reports.html" class="active">Reports</a>
+    <a href="contact.html">Flash Cards</a>
+    <a href="quiz.html">Quiz</a>
+  </nav>
+
+  <div class="content-row">
+    <div class="info-box">
+      <h3>New Narrative Requirements Effective April 01, 2025</h3>
+      <ul>
+        <li>Narratives will only be required when Protective Services members are involved in an arrest, use of force, hands on applications, following critical incidents, death or serious injury process, property damage, MHA transfers, fines, and trespass orders.</li>
+        <li><strong>IMPORTANT:</strong> If you feel a scenario requires a narrative, you have the duty to discuss with your TL or Manager and feel free to err on the side of caution and document the scenario.</li>
+        <li>Officer notebooks and notes in officer notebooks are still required and can be used as future references for historical Protective Services incidents. No change in this practice.</li>
+      </ul>
+    </div>
+
+    <div class="flowchart-img">
+      <img src="pics/FlowChart.jpg" alt="Narrative Guidelines Flowchart" />
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+</body>
+
+</html>
