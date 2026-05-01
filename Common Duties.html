@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASH</title>
+  <link rel="icon" type="image/jpeg" href="img/SSlogo.jpg" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" href="stylesheet.css" />
+</head>
+
+<body>
+
+  <header>
+    <h1>AHS Protective Serivces Unoffical Guide</h1>
+    <p>Stuff you want to know</p>
+  </header>
+
+  <nav>
+    <a href="index.html" class="active">Appointment</a>
+    <a href="Red Deer.html">Red Deer</a>
+    <a href="Rurals.html">Rural</a>
+    <a href="CCMHBI.html">CCMHBI</a>
+    <a href="Common Duties.html">Important</a>
+    <a href="Copy of Forms.html">Forms</a>
+    <a href="reports.html">Reports</a>
+    <a href="quiz.html">Training</a>
+   
+  </nav>
+
+    <div class="container">
+    <section id="contact">
+      <h2>These are the stuff you want to know</h2>
+      <p>
+        Any other thoughts let me know
+      </p>
+    </section>
+
+    <section class="about-pg">
+      <div id="description">
+        <h1>The stuff</h1>
+        <div id="accordion">
+          <h3>Pay Stuff</h3>
+          <div class="accordion-panel" id="upcoming-panel">
+            <h3>Pay Stub Explained</h3>
+            <p>
+                When you work, you techncally only work 11 hours, 1 hour is "lunch". You get paid for that lunch as you always have to be 
+                availble for call, but you do not get bounus on that hour (shift diff, STAT etc)
+            </p>
+
+            <p>
+                Pay increass happen by time worked. Every 200? hours you get a dollar pay increass. You how many hours you have till you 
+                next pay bump on Epeople
+            </p>
+
+            <h3>Allowance, Equipment and Clothes</h3>
+            <p>
+                You can request new gear on xxxxxxx. Fill out the form and CC your manager. Your allocated 3 short sleeve shirts, 1 long sleeve
+                shirt, 2 pants, 1 jacket and replacement on any gear damaged (gloves, handcuffs, baton holster etc).
+            </p>
+            
+            <h3>Pay Periods</h3>
+            <p>Looking at the Schedual, the shifts between the BLUE lines is a pay period</p>
+            
+            <h3>Overtime</h3>
+            <p>It get complicated, but I'll dumb it down. You get OT when you work more then 24 shifts across 3 pay periods. 
+                This means you won't get OT if you worked 10 shifts straight, but only 2 shift last week.
+            </p>
+            
+            <h3>Shift Diff</h3>
+            <p>xxxx-xxxx = Day (Nadda), xxxx-xxxx = Evenings (+$3), xxxx-xxxx = Nights (+$5)</p>
+            <p>You only get shift diff if ACTUALLY working (banked time like vacca, sick, pl etc don't get shift diff)</p>
+            
+            <h3>STATS</h3>
+            <p>Stat days are 2x pay (not including shift diff), banked if full time, paid out if casual</p>
+            <p>STAT days are marked on Schedual as pink day, but Augest (Heritage Day) and December (Xmas Day) are SUPER Stat (3.5x pay)</p>
+          </div>
+
+          <h3>Full Time Benies</h3>
+          <div class="accordion-panel" id="performance-panel">
+            <h3>Vacca Time</h3>
+            <p>You get 128 hours of Vacca time a year. If you look at your vacca time on epeople is probably say's -X hours. It starts like this
+                so when you start, you have vacca hours immediately, rather then having to work like a year till you start banking it. You get essential
+                get 1 hour of vacca added every shift. Max Vacca you can bank is +200, after that management is going to get on your ass to cash or use it.
+            </p>
+            
+            <h3>Personal Leave</h3>
+            <p>A day you can take whenever you want. It's meant as somthing came up and you need to skip work to deal with it. You
+                can only use 7 hours of it at a time. This is often supplemented with 4 hours of banked STAT or Vacca time to equal 
+                a regular shift (again no shift diff). 
+            </p>
+
+            <h3>Grival Leave</h3>
+            <p>If a family meaber passes away you can take 2-3 days? Check with your Manager. 
+            </p>
+
+            <h3>Sick Time</h3>
+            <p>Banked with time worked. Unlike Vacca time, starts at 0. You get an hour every two shifts? 
+            </p>
+
+            <h3>Flex Account</h3>
+            <p>You get $900 in a Flex account each year. You must pick how much you want of the $900 you want in Wellness and Health.
+                Health spending supplements medical stuff (dentist, messages, etc). Wellness is to buy stuff that essential would "help your
+                Mental Health". There werid about what counts, you can't buy a TV, but you can buy a PC monitor. Essential just have tp justify
+                how it will "Help" you "grow" or "stay fit".
+            </p>
+
+            <h3>Allowance</h3>
+            <p>Every two years you can claim your boot allowance. When you buy new boots submit the recipet on XXXX. 
+                They will reimbure you up to $200. If you did the bike course you also get a shoe allowance, same thing but only covers $150.
+            </p>
+            </div>
+        </div>
+
+      <div class="sponsor-bubble">
+    <h3>Where to go to find/use this stuff</h3>
+      <p>F Drive - Schedual, pass on and basic operation stuff</p>
+      <p>epeople - Pay, T4 and Banked time</p>
+      <p>Teams - Confrence call, pre-trip inspection and Recipts</p>
+      <p>My learning link - coruses and info</p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script>
+    $(function () {
+      $("#accordion").accordion({
+        collapsible: true,
+        heightStyle: "content"
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+<script>
+(function() {
+    const password = "AHS@120";
+    let userInput = prompt("Enter password to access this site:");
+    if (userInput !== password) {
+        document.body.innerHTML = "<h1>Access Denied</h1>";
+    }
+})();
+</script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ASH</title>
@@ -19,9 +29,13 @@
 
   <nav>
     <a href="index.html" class="active">Appointment</a>
+    <a href="Red Deer.html">Red Deer</a>
+    <a href="Rurals.html">Rural</a>
+    <a href="CCMHBI.html">CCMHBI</a>
+    <a href="Common Duties.html">Basics</a>
+    <a href="Copy of Forms.html">Forms</a>
     <a href="reports.html">Reports</a>
-    <a href="contact.html">Flash Cards</a>
-    <a href="quiz.html">Quiz</a>
+    <a href="quiz.html">Training</a>
   </nav>
 
   <div class="container">
@@ -201,6 +215,15 @@
 
 <section id="contact">
   <h2>Appointment Infomaton</h2>
+
+    <div class="sponsor-bubble">
+      <h3>Article 1. Authority, Responsibility and Duties</h3>
+      <p>
+        1.1 Subject to section 1.2, the person appointed under the Solicitor General has authority, 
+        while employed or engaged by Alberta Health Services and while acting within the scope of his/her employment or engagement, 
+        to enforce the following legislation and all regulations thereunder, and serve court documents relating to these specified acts.
+      </p>
+    </div>
 
   <div class="sponsor-bubble">
     <h3>Article 2 - Jurisdictions</h3>
