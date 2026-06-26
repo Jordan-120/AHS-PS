@@ -1,150 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ASH</title>
+  <title>RDRH</title>
   <link rel="icon" type="image/jpeg" href="img/SSlogo.jpg" />
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
   <link rel="stylesheet" href="stylesheet.css" />
 </head>
-
 <body>
-
   <header>
-    <h1>AHS Protective Serivces Unoffical Guide</h1>
-    <p>Red Deer Cheat Sheet</p>
+    <h1>AHS Protective Services Unofficial Guide</h1>
+    <p>Red Deer Regional Hospital quick reference</p>
   </header>
 
   <nav>
-    <a href="index.html" class="active">Appointment</a>
-    <a href="Red Deer.html">Red Deer</a>
-    <a href="Rurals.html">Rural</a>
+    <a href="index.html">Authorities</a>
+    <a href="Common Duties.html">Essentials</a>
+    <a href="Red Deer.html" class="active">RDRH</a>
+    <a href="Rurals.html">CZ Mobile</a>
     <a href="CCMHBI.html">CCMHBI</a>
-    <a href="Common Duties.html">Basics</a>
-    <a href="Copy of Forms.html">Forms</a>
     <a href="reports.html">Reports</a>
-    <a href="quiz.html">Training</a>
+    <a href="Tickets.html">Tickets</a>
+    <a href="Copy of Forms.html">Forms</a>
+    <a href="Training.html">Training</a>
   </nav>
 
-  <div class="container">
-    <section id="contact">
-      <h2>Red Deer Cheat Sheet</h2>
-      <p>
-        This is a designated Mental Health Facility. There are 3 PO's (RD1-3) and 4 Paladins (RD4-7). RD1 is Team Lead. 
-        Pass on is at 0645 and 1845 in MR2. Leave your gear in MR2. Also might have to cover RD offsites if called.
-      </p>
+  <main class="container essentials-page">
+    <section id="contact" class="essentials-hero">
+      <p class="eyebrow">Site Reference</p>
+      <h2>RDRH</h2>
+      <p>Red Deer site notes, maps, safekeeping, morgue process, authorities, and restraint references.</p>
     </section>
 
-    <section class="about-pg">
-      <div id="description">
-        <h1>Policies and Procedures</h1>
-        <div id="accordion">
+    <section class="essentials-dashboard" aria-label="RDRH quick cards">
+      <article class="essentials-mini-card"><span class="mini-icon">M</span><h3>Maps</h3><p>Grounds and floor maps with click-to-expand viewing.</p></article>
+      <article class="essentials-mini-card"><span class="mini-icon">S</span><h3>Safekeeping</h3><p>Intake, receipt, release, and documentation reminders.</p></article>
+      <article class="essentials-mini-card"><span class="mini-icon">10</span><h3>Morgue</h3><p>Morgue in/out process, SBM, partials, and admissions steps.</p></article>
+      <article class="essentials-mini-card"><span class="mini-icon">R</span><h3>Restraints</h3><p>Restraint reference images with note cards for your write-ups.</p></article>
+    </section>
 
+    <section class="about-pg essentials-card">
+      <h1>RDRH Quick Reference</h1>
+      <div id="accordion" class="essentials-accordion">
         <h3>Maps</h3>
         <div class="accordion-panel">
-          <h3>Grounds</h3>
-          <img src="pics/RDRH Grounds.jpg" alt="Hospital grounds map">
-          <h3>Lower Level</h3>
-          <img src="pics/RDRH LL.jpg" alt="Lower floor map">
-          <h3>Main Level</h3>
-          <img src="pics/RDRH ML.jpg" alt="Main floor map">
-          <h3>2nd Floor</h3>
-          <img src="pics/RDRH 2F.jpg" alt="2nd floor map">
-          <h3>3rd Floor</h3>
-          <img src="pics/RDRH 3F.jpg" alt="3rd floor map">
+          <div class="map-grid">
+            <article class="map-card rol-card"><h4>Grounds</h4><img alt="Hospital grounds map" class="resource-image expandable-img" src="pics/RDRH Grounds.jpg" /></article>
+            <article class="map-card rol-card"><h4>Lower Level</h4><img alt="Lower level map" class="resource-image expandable-img" src="pics/RDRH LL.jpg" /></article>
+            <article class="map-card rol-card"><h4>Main Level</h4><img alt="Main level map" class="resource-image expandable-img" src="pics/RDRH ML.jpg" /></article>
+            <article class="map-card rol-card"><h4>Second Floor</h4><img alt="Second floor map" class="resource-image expandable-img" src="pics/RDRH 2F.jpg" /></article>
+            <article class="map-card rol-card"><h4>Third Floor</h4><img alt="Third floor map" class="resource-image expandable-img" src="pics/RDRH 3F.jpg" /></article>
+          </div>
         </div>
 
-            <h3>Forms</h3>
-          <div class="accordion-panel" id="upcoming-panel">
-            <h3>Form 1, 8, 23 may be a security watch, check with staff to see if they want a Security Watch or want you to just check every X amount of minuts (Q15, Q30, etc). TL/ATL has final say if we cant watch (call volume/ short or something)</h3>
-            <h3>Form 10 will be taken over by PO once they are in a room (NOT THE FAMILY ROOM). If the individual is not likely to cause issuie, Paladin can watch to free up the PO</h3>
+        <h3>Forms</h3>
+        <div class="accordion-panel">
+          <div class="info-grid two-col">
+            <article class="info-box"><h4>Form 1 - (Admission Certificate)</h4><p>Patient is detained under the mental health act for 24 hours and cannot leave. If they manage to elope, 
+              RCMP will be contacted by ER or Unit staff for a warrant to be placed to be brought back. Depending on the situation, they may be paced under a 
+              security watch or under interval checks (Q15, Q30, Q60). Check with staff if this is desired.</p></article>
+            <article class="info-box"><h4>Form 2 - (Renewal Certificate)</h4><p>Custody has been extended from 24 hours to up to 3 months</p><p class="note">Treated/Operational the same as a Form 1</p></article>
+            <article class="info-box"><h4>Form 8 - (Warrent for MHA)</h4><p>Someone went to a judge and essentially got an order for a Form 10</p><p class="note">Treated/Operational the same as a Form 1</p></article>
+            <article class="info-box"><h4>Form 10 - (Peace Officer Apprehension)</h4><p>Protective Services may take over once the individual is in a proper room. Do not take over in the family room.</p><p class="note">If the person is calm and unlikely to cause issues, then it may be Treated/Operational the same as a Form 1</p></article>
+            <article class="info-box"><h4>Form 11 - (Incompetence to Make Treatment Decisions)</h4><p>This allows medical treatment against the patients will (like forced bloodwork) if necessary.</p><p class="note">These are very rare and reqiures three doctors to sign off on</p></article>
+            <article class="info-box"><h4>Form 23 - (CTO Apprehension Order)</h4><p>Pataint missed there court mandatied MHA appointment. Often brought in by RCMP PACT Team</p><p class="note">Treated/Operational the same as a Form 1</p></article>
+            <p class="note">The TL/ATL has final say if a watch cannot be supported due to call volume, short staffing, or site demands.</p>
           </div>
+        </div>
 
-          <h3>Safe Keeping</h3>
-          <div class="accordion-panel" id="upcoming-panel">
-            <h3>Items</h3>
-                <p>1. Log what the contents are on the envelope (money is it's own envelope)</p>
-                <p>2. Have the individual sign to prove it's accurate (staff can sign if they are the ones giving you the items)</p>
-                <p>3. Log the envlope number and details on the Safekeeping Log</p>
-                <p>4. Give page from envelope recipet to the pataint or the Unit assocated with pataint if they gave you the items</p>
-            <h3>Important Notes</h3>
-                <p>Do not edit sheets once filled out (no partial release, release everything and re-log if needed)</p>
-                <p>Editing sheets can be percived as possible theft</p>
-                <p>Do not hold ilegal items (ilegal drugs, open liquire etc)</p>
-                <p>Do not release items without pataint giving you the receipt (the sheet givin to the unit)</p>
+        <h3>Safekeeping</h3>
+        <div class="accordion-panel">
+          <div class="info-grid two-col">
+            <article class="info-box"><h4>Item Intake</h4><ul><li>Log contents on the envelope. Money goes in its own envelope.</li><li>Have the individual sign to confirm the contents are accurate.</li><li>If staff provide the items, staff may sign instead.</li><li>Record the envelope number and details on the Safekeeping Log.</li><li>Give the receipt page to the patient or unit.</li></ul></article>
+            <article class="info-box highlight-box"><h4>Important Notes</h4><ul><li>Do not edit safekeeping sheets after completion.</li><li>No partial releases. Release everything and re-log if needed.</li><li>Do not hold illegal items, including illegal drugs or open liquor.</li><li>Do not release items unless the patient provides the receipt.</li></ul></article>
           </div>
+        </div>
 
-          <h3>Moruge</h3>
-          <div class="accordion-panel" id="exterior-panel">
-            <h3>Moruge Location</h3>
-            <p>
-              is found in lower level in the hallway leading to the loading docks. 
-            </p>
-
-            <h3>Moruge In</h3>
-            <h4>Regular individual</h4>
-            <p>Contact the potors to see if there ready. If so meet them at the porters office and escourt them to the moruge. Ask to see if 
-              the individual is beareatrics (over 300lbs), if so, use the larger gerni found inside the moruge cooler. When at the Unit, assit staff 
-              with transfer the individual onto the new gerni (if there bigger as can ask staff to use a slider board). Ask staff if there is effects 
-              (belongings) to go with the indvidual. If so, have staff fill out an effects sheet they should have. Then escourt the portor 
-              with the indivudal to the moruge. Use the lift in the cooler to tranfer the tray with the indivudal on it, from the gerni to the 
-              racks. After, Grab an empty rack and place it back on the gerni for the next time it's used. Fill out the moruge book afterwards 
-              with the info from the toe tag and place the effects sheet in the binder aswell. Then go to addmissions desk at south complex and 
-              give them the toe tag (or to the admission desk at ER if between 2000-0500). Also note the indivudals info to fill in the other 
-              moruge traker we have online (RedDeer_Security > Paladin Protective Services > Morgue Traker Log.xlsx )</p>
-            
-            <h4>SBM</h4>
-            <p>If the pataint is SBM, go to the Unit and escourt the nurse with the pataint to the moruge. Place the indivdual on the SBM tray in the 
-              cage in the cooler. Fill out the moruge book and take the tag to addmissions.
-            </p>
-            
-            <h4>Partial</h4>
-            <p>Go and swipe into the OR room at the regional main hallway next to the pataints/porters only elevator. Tell the front desk your there for 
-              partial 10-53 in. They will show you to a big yellow container (often with a bio-hazzerd logo on it). Take the container to the mourge and
-              place in inside the cage in the cooler area. No tag or book to fill out</p>
-
-            <h3>Moruge Out</h3>
-            <p>Go down to the loading dock. Lower the ramp for the Funeral Home. Escorut them to the moruge. Assit the in transfering the pataint 
-                to there gerni. Fill in the moruge book (release effects if any). Escourt them back out. Take the Toe Tag slip to Admissions with 
-                the time of release written on the back. Write the info of the release in the computers morgue log. If effects were relased, 
-                put the copy in the moruge effects binder.
-            </p>
+        <h3>Morgue</h3>
+        <div class="accordion-panel">
+          <div class="info-grid two-col">
+            <article class="info-box"><h4>Morgue Location</h4><p>The morgue is located on the lower level in the hallway leading toward the loading docks.</p></article>
+            <article class="info-box"><h4>Morgue In: Regular Patient</h4><ul><li>Contact porters to confirm they are ready.</li><li>Meet at the porters office and escort to the unit.</li><li>Ask whether the patient is bariatric. If so, use the larger gurney from the morgue cooler.</li><li>Ask staff if personal effects are being sent with the patient.</li><li>Escort the porter and patient to the morgue.</li><li>Use the cooler lift to transfer the tray from the gurney to the rack.</li><li>Complete the morgue book and place any effects sheet in the binder.</li><li>Take the toe tag to Admissions, or ER Admissions after hours.</li><li>Record the information in the online morgue tracker.</li></ul></article>
+            <article class="info-box"><h4>Morgue In: SBM</h4><p>Go to the unit and escort the nurse with the patient to the morgue. Place the patient on the SBM tray in the cage inside the cooler. Complete the morgue book and take the tag to Admissions.</p></article>
+            <article class="info-box"><h4>Morgue In: Partial</h4><p>Swipe into the OR area from the regional main hallway near the patient/porter elevator. Tell the front desk you are there for a partial 10-53 in. Take the yellow container to the morgue and place it inside the cage in the cooler.</p><p class="note">No tag or morgue book entry is required for partials.</p></article>
+            <article class="info-box"><h4>Morgue Out</h4><ul><li>Go to the loading dock and lower the ramp for the funeral home.</li><li>Escort funeral home staff to the morgue.</li><li>Assist with transferring the patient as needed.</li><li>Complete the morgue book and release effects if applicable.</li><li>Write the release time on the toe tag slip and take it to Admissions.</li><li>Record the release in the computer morgue log.</li></ul></article>
           </div>
+        </div>
 
-            <h3>Extra</h3>
-          <div class="accordion-panel" id="exterior-panel">
-            <h3>Extra
-            </h3>
+        <h3>Common Use of Authorities</h3>
+        <div class="accordion-panel">
+          <div class="info-grid two-col">
+            <article class="info-box"><h4>Form 10</h4><p>RDRH is a designated mental health facility, so officer my apprehended someone Form 10 for MHA if required. If you Form 10 someone they are automatically under a security watch. Whether you apprehended or RCMP, a copy of the Form 10 must be attached to the file.</p><p>If you complete a Form 10, complete the form, create the Perspective file, attach the Form 10, and complete your notes.</p></article>
+            <article class="info-box"><h4>Trespass</h4><p>You may inform someone they are trespassed and escort them off property. If they refuse to leave, you may physically escort them off property. If they resist, you can decide to continue with the escort or arrest them transfer custody to RCMP.</p><p>It is preferred that the person signs the Trespass Form and receives a copy. If they refuse, write RTS for refused to sign. Attach the form to perspective</p><p>If they return without DIRECTLY seeking medical care, remove them from property or arrest them.</p></article>
           </div>
-            
+        </div>
 
+        <h3>Restraints</h3>
+        <div class="accordion-panel">
+          <p class="note">Officers at RDRH will likely use these in combination multiple times a shift</p>
+          <div class="restraint-row"><img alt="Restraint types reference" class="restraint-image expandable-img" src="pics/RestraintTypes.jpg" /><article class="rol-card"><h4>Restraint Type</h4>
+            <p><strong>1. Verbal</strong> = Giving lawful clear verbal directions</p><br>
+            <p><strong>2. Chemical</strong> = Behavior PRN ordered by staff, use physical or light physical to avoid needle breaking or unintended targets. Behavioral medicine you will encounter are::</p>
+              <ul>
+                <li><strong>Lorazepam (aka Loraz or Ativan)</strong> Level 1 - Quick acting, not strong</li>
+                <li><strong>Haloperidol (aka Haldol)</strong> Level 2 - Takes 20-30</li> 
+                <li><strong>Olanzapine (aka Olanz)</strong> Level 2 - Takes 15-20</li> 
+                <li><strong>Zuclopenthixol (aka Acuphase)</strong> Level 3 - Starts working in 2 Hours, but lasts days</li> 
+                <li><strong>Acuphase + Haldol (aka Snow)</strong> Level 3.5 - Used for quick plus long term sedation</li> 
+                <li><strong>Ketamine</strong> Level 20 - Instant (very rare, mostly used in life or death struggles)</li>
+              </ul><br>
+            <p><strong>3. Velcro</strong> = Uncommon (some EMS have) and difficult to use, avoid if possible</p><br>
+            <p><strong>4. Soft</strong> = geriatric or disoriented individuals. There are two version, single and double straps</p><br>
+            <p><strong>5. Segufix</strong> = aka mechanical restraints, used with actively combative or cognitive elopement attempts (High Risk)</p><br>
+            <p><strong>6. Handcuffs</strong> = aka hard restraints. Mostly used in transporting or to secure after a physical restraint</p><br>
+            <p><strong>7. Physical</strong> = Physical mean force was required, Light physical means with little to no force or resistance</p><br>
+          </article></div>
+          <div class="restraint-row"><img alt="CEG colour reference" class="restraint-image expandable-img" src="pics/CegColors2.jpg" /><article class="rol-card"><h4>Segufix Colors</h4><p>Yellow = Wrists</p><p>Green = Feet</p><p>Blue = Extension</p></article></div>
+          <div class="restraint-row"><img alt="CEG workflow restraint reference" class="restraint-image expandable-img" src="pics/CegWF3.jpg" /><article class="rol-card"><h4>Segufix Waist and Double Foot Restraints</h4><p>Used mainly for geriatric or extremely mobile individuals when required. The waist restraint can be difficult to work with. Simplest way the belt faces up and the belt with the extra straps gets secured to the bed.</p></article></div>
         </div>
       </div>
     </section>
-  </div>
-  
+  </main>
 
-<section id="contact">
-  <h2>Common use of Authoritys</h2>
-
-  <div class="sponsor-bubble">
-    <h3>Form 10</h3>
-      <p>This is a designated Mental Health Facility, You can Form 10 people if required. Do not Form 10 pataints, unless 
-        it has been disscused with staff that it is the best course of action. If you do, follow basic Procedures (fill out Form 10, 
-        Perpective file with attched Form 10, Notes etc.)
-    </p>
-  </div>
-
-    <div class="sponsor-bubble">
-    <h3>Tresspass</h3>
-    <p>You can inform someone they are tresspased. They are then to be escourted off property. If they refuse, you can arrest them or contact RCMP 
-        It is preferd that they sign the Tresspass Form and are given a copy. This is not required and if they don't sign, just write RTS 
-        (refused to sign). If they return without DIRECTLY seeking medical care, you may arrest them or just kick them off property. 
-        If arrested, call RCMP to pick them up. Attch the Tresspass From to the perpective file.
-    </p>
+  <div aria-hidden="true" class="image-lightbox" id="siteImageLightbox">
+    <div class="image-lightbox-content">
+      <div class="image-lightbox-toolbar">
+        <button id="siteImageLightboxClose" type="button">Close</button>
+      </div>
+      <img alt="Expanded image" id="siteImageLightboxImg" src="" />
     </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
@@ -152,10 +138,51 @@
     $(function () {
       $("#accordion").accordion({
         collapsible: true,
-        heightStyle: "content"
+        heightStyle: "content",
+        active: false
       });
     });
   </script>
-</body>
 
+  <script>
+    (() => {
+      const lightbox = document.getElementById('siteImageLightbox');
+      const lightboxImg = document.getElementById('siteImageLightboxImg');
+      const closeBtn = document.getElementById('siteImageLightboxClose');
+      if (!lightbox || !lightboxImg || !closeBtn) return;
+
+      const close = () => {
+        lightbox.classList.remove('is-open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        lightboxImg.src = '';
+      };
+
+      document.querySelectorAll('.expandable-img').forEach((img) => {
+        img.setAttribute('tabindex', '0');
+        img.setAttribute('title', 'Click to expand');
+        img.addEventListener('click', () => {
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt || 'Expanded image';
+          lightbox.classList.add('is-open');
+          lightbox.setAttribute('aria-hidden', 'false');
+        });
+        img.addEventListener('keydown', (event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            img.click();
+          }
+        });
+      });
+
+      closeBtn.addEventListener('click', close);
+      lightbox.addEventListener('click', (event) => {
+        if (event.target === lightbox || event.target === lightboxImg) close();
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && lightbox.classList.contains('is-open')) close();
+      });
+    })();
+  </script>
+
+</body>
 </html>

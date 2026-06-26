@@ -1,5 +1,7 @@
 
-  document.getElementById("quizForm").addEventListener("submit", function (e) {
+  const quizForm = document.getElementById("quizForm");
+  if (quizForm) {
+  quizForm.addEventListener("submit", function (e) {
     e.preventDefault(); // Prevent form submission
 
     const answers = {
@@ -40,3 +42,4 @@
     resultDiv.innerHTML = output;
     document.getElementById("quizForm").after(resultDiv);
   });
+  }

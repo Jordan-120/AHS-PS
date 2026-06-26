@@ -1,54 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ASH</title>
+  <title>Training</title>
   <link rel="icon" type="image/jpeg" href="img/SSlogo.jpg" />
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
   <link rel="stylesheet" href="stylesheet.css" />
 </head>
-
 <body>
-
   <header>
-    <h1>AHS Protective Serivces Unoffical Guide</h1>
-    <p>Ponoka Centenial Center</p>
+    <h1>AHS Protective Services Unofficial Guide</h1>
+    <p>Training, practice scenarios, and quiz review</p>
   </header>
 
   <nav>
-    <a href="index.html" class="active">Appointment</a>
-    <a href="Red Deer.html">Red Deer</a>
-    <a href="Rurals.html">Rural</a>
+    <a href="index.html">Authorities</a>
+    <a href="Common Duties.html">Essentials</a>
+    <a href="Red Deer.html">RDRH</a>
+    <a href="Rurals.html">CZ Mobile</a>
     <a href="CCMHBI.html">CCMHBI</a>
-    <a href="Common Duties.html">Basics</a>
-    <a href="Copy of Forms.html">Forms</a>
     <a href="reports.html">Reports</a>
-    <a href="quiz.html">Training</a>
-   
-    <!--Index Auth-->
-    <!--Red Deer-->
-    <!--CCMHBI-->
-    <!--Ruals-->
-    <!--Reports-->
-    <!--Common Duties-->
-    <!--Training-->
-    <!--Copy of Forms-->
-
+    <a href="Tickets.html">Tickets</a>
+    <a href="Copy of Forms.html">Forms</a>
+    <a href="Training.html" class="active">Training</a>
   </nav>
 
+  <main class="container essentials-page training-page">
+    <section id="contact" class="essentials-hero">
+      <p class="eyebrow">Learning</p>
+      <h2>Training</h2>
+      <p>Use this page for practice discussions, quiz review, annual training reminders, and reference material.</p>
+    </section>
+
+    <section class="essentials-dashboard" aria-label="Training quick cards">
+      <article class="essentials-mini-card"><span class="mini-icon">?</span><h3>Quiz</h3><p>Use the built-in quiz to review authorities, reports, and common reference points.</p></article>
+      <article class="essentials-mini-card"><span class="mini-icon">PS</span><h3>Practice Scenarios</h3><p>Discuss realistic made-up scenarios with your team and compare decision-making.</p></article>
+      <article class="essentials-mini-card"><span class="mini-icon">✓</span><h3>Training Review</h3><p>Things to learn or practise while in Sol Gen and Standard Operating Procedures for PO's</p></article>
+      <article class="essentials-mini-card"><span class="mini-icon">R</span><h3>Reference Material</h3><p>In House and External Tools</p></article>
+    </section>
+
+    <section class="about-pg essentials-card">
+      <h1>Training Notes</h1>
+      <div id="accordion" class="essentials-accordion">
+
+        <h3>Quiz #1</h3>
+        <div class="accordion-panel">
+          <p class="panel-lead">Complete the quiz below, then submit it to check your answers (more/better coming soon).</p>
+
+          <form id="quizForm" class="training-quiz-form">
+            <fieldset>
+              <legend>1. Which section of the Mental Health Act allows peace officers to apprehend without a warrant?</legend>
+              <label><input type="radio" name="q1" value="a"> Section 10</label>
+              <label><input type="radio" name="q1" value="b"> Section 12</label>
+              <label><input type="radio" name="q1" value="c"> Section 20</label>
+              <label><input type="radio" name="q1" value="d"> Section 30</label>
+            </fieldset>
+
+            <fieldset>
+              <legend>2. What type of incidents require a written narrative report?</legend>
+              <label><input type="radio" name="q2" value="a"> Any patient escort</label>
+              <label><input type="radio" name="q2" value="b"> Use of force, arrest, or critical incident</label>
+              <label><input type="radio" name="q2" value="c"> Verbal warning</label>
+              <label><input type="radio" name="q2" value="d"> Non-compliance without consequences</label>
+            </fieldset>
+
+            <fieldset>
+              <legend>3. What document replaces Perspective for incident tracking?</legend>
+              <label><input type="radio" name="q3" value="a"> RMS</label>
+              <label><input type="radio" name="q3" value="b"> Outlook</label>
+              <label><input type="radio" name="q3" value="c"> PowerPoint</label>
+              <label><input type="radio" name="q3" value="d"> SharePoint</label>
+            </fieldset>
+
+            <fieldset>
+              <legend>4. Which act deals with consumption of liquor in public?</legend>
+              <label><input type="radio" name="q4" value="a"> Mental Health Act</label>
+              <label><input type="radio" name="q4" value="b"> Traffic Safety Act</label>
+              <label><input type="radio" name="q4" value="c"> Gaming, Liquor and Cannabis Act</label>
+              <label><input type="radio" name="q4" value="d"> Public Health Act</label>
+            </fieldset>
+
+            <fieldset>
+              <legend>5. What is Section 21(1) of the Mental Health Act used for?</legend>
+              <label><input type="radio" name="q5" value="a"> Arrest with a warrant</label>
+              <label><input type="radio" name="q5" value="b"> Use of restraints</label>
+              <label><input type="radio" name="q5" value="c"> Return of a formal patient</label>
+              <label><input type="radio" name="q5" value="d"> Issue of a fine</label>
+            </fieldset>
+
+            <fieldset>
+              <legend>6. What does Section 50(2) of the Public Health Act relate to?</legend>
+              <label><input type="radio" name="q6" value="a"> Communicable disease management</label>
+              <label><input type="radio" name="q6" value="b"> Alcohol licensing</label>
+              <label><input type="radio" name="q6" value="c"> Peace officer jurisdiction</label>
+              <label><input type="radio" name="q6" value="d"> Mental health transfers</label>
+            </fieldset>
+
+            <fieldset>
+              <legend>7. Officer notebooks must be:</legend>
+              <label><input type="radio" name="q7" value="a"> Used optionally</label>
+              <label><input type="radio" name="q7" value="b"> Abandoned with RMS</label>
+              <label><input type="radio" name="q7" value="c"> Used only during arrests</label>
+              <label><input type="radio" name="q7" value="d"> Maintained as usual</label>
+            </fieldset>
+
+            <fieldset>
+              <legend>8. What equipment is NOT permitted under the peace officer appointment?</legend>
+              <label><input type="radio" name="q8" value="a"> Baton</label>
+              <label><input type="radio" name="q8" value="b"> SAP gloves</label>
+              <label><input type="radio" name="q8" value="c"> Bullet resistant vest</label>
+              <label><input type="radio" name="q8" value="d"> Handcuffs</label>
+            </fieldset>
+
+            <fieldset>
+              <legend>9. What does Section 70(2) of the Public Health Act typically concern?</legend>
+              <label><input type="radio" name="q9" value="a"> Hospital staffing</label>
+              <label><input type="radio" name="q9" value="b"> Public health enforcement</label>
+              <label><input type="radio" name="q9" value="c"> Use of PPE</label>
+              <label><input type="radio" name="q9" value="d"> Transfer protocols</label>
+            </fieldset>
+
+            <fieldset>
+              <legend>10. Section 115 of the Gaming, Liquor and Cannabis Act involves:</legend>
+              <label><input type="radio" name="q10" value="a"> Cannabis sale locations</label>
+              <label><input type="radio" name="q10" value="b"> Licence cancellation upon business disposal</label>
+              <label><input type="radio" name="q10" value="c"> Advertising laws</label>
+              <label><input type="radio" name="q10" value="d"> Peace officer arrest powers</label>
+            </fieldset>
+
+            <button type="submit" class="quiz-submit">Submit Quiz</button>
+          </form>
+        </div>
+
+        <h3>Practice Scenarios</h3>
+        <div class="accordion-panel">
+          <p class="panel-lead">Scenarios for discussion with your team. These are made-up scenarios intended for training conversation and decision-making practice.</p>
+
+          <div class="scenario-grid">
+            <article class="scenario-card">
+              <h4>Scenario 1: LT-14 Pipe</h4>
+              <p>You have been called to LT-14. Staff report the patient has a pipe in his hands. When you arrive, you see the pipe and lighter in his hands. When you ask him to surrender the pipe, he refuses. He does not want to leave AMA, and staff do not want him to leave for medical reasons.</p>
+              <div class="discussion-prompts">
+                <strong>Discuss:</strong>
+                <ul>
+                  <li>What are your immediate safety concerns?</li>
+                  <li>What communication approach would you use first?</li>
+                  <li>Who needs to be involved before the situation escalates?</li>
+                  <li>What would need to be documented afterward?</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="scenario-card">
+              <h4>Scenario 2: ER Disturbance</h4>
+              <p>You have someone causing a disturbance in ER. They want to see a doctor and triage does not want them removed. You have spoken with them about their behaviour, and they told you to “fuck off.”</p>
+              <div class="discussion-prompts">
+                <strong>Discuss:</strong>
+                <ul>
+                  <li>How do you balance access to care with safety and behaviour expectations?</li>
+                  <li>What verbal direction or warning would be appropriate?</li>
+                  <li>When would you involve triage, charge nurse, TL/ATL, or police?</li>
+                  <li>What details should be captured in notes or a file?</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="scenario-card">
+              <h4>Scenario 3: Unit 33 Suspected Drug Use</h4>
+              <p>You have been called to Unit 33. One of their patients is suspected of drug use. They left the unit and came back appearing under the influence. When you go to the room, the patient admits to using fentanyl but says they do not want you going through their belongings.</p>
+              <div class="discussion-prompts">
+                <strong>Discuss:</strong>
+                <ul>
+                  <li>What authority or policy questions need to be considered?</li>
+                  <li>What should be clarified with nursing staff before taking action?</li>
+                  <li>How would consent, safety risk, and patient care affect your decision-making?</li>
+                  <li>What should be documented if no search occurs, or if further action is taken?</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <h3>Training Review</h3>
+        <div class="accordion-panel">
+          <p class="panel-lead">Coming Soon</p>
+          <div class="info-grid two-col">
+            <article class="info-box"><h4>New Members info</h4><p>Things to learn or practise while in Sol Gen</p></article>
+            <article class="info-box"><h4>Info based on site</h4><p>Being new to a site and their Standard Operating Procedures</p></article>
+          </div>
+        </div>
+
+        <h3>Reference Material</h3>
+        <div class="accordion-panel">
+          <p class="panel-lead">Coming Soon</p>
+          <div class="info-grid two-col">
+            <article class="info-box"><h4>In House Tools</h4><p>Details with epeople, mylearning link, etc..</p></article>
+            <article class="info-box"><h4>External Tools</h4><p>Where to find acts and Solicitor General information</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script src="javascript.js"></script>
   <script>
     $(function () {
       $("#accordion").accordion({
         collapsible: true,
-        heightStyle: "content"
+        heightStyle: "content",
+        active: false
       });
     });
   </script>
-</body>
 
+</body>
 </html>

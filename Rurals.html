@@ -1,163 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ASH</title>
+  <title>CZ Mobile</title>
   <link rel="icon" type="image/jpeg" href="img/SSlogo.jpg" />
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
   <link rel="stylesheet" href="stylesheet.css" />
 </head>
-
 <body>
-
   <header>
-    <h1>AHS Protective Serivces Unoffical Guide</h1>
-    <p>Mobile Rural Stuff</p>
+    <h1>AHS Protective Services Unofficial Guide</h1>
+    <p>Central Zone Mobile quick reference</p>
   </header>
 
   <nav>
-    <a href="index.html" class="active">Appointment</a>
-    <a href="Red Deer.html">Red Deer</a>
-    <a href="Rurals.html">Rural</a>
+    <a href="index.html">Authorities</a>
+    <a href="Common Duties.html">Essentials</a>
+    <a href="Red Deer.html">RDRH</a>
+    <a href="Rurals.html" class="active">CZ Mobile</a>
     <a href="CCMHBI.html">CCMHBI</a>
-    <a href="Common Duties.html">Basics</a>
-    <a href="Copy of Forms.html">Forms</a>
     <a href="reports.html">Reports</a>
-    <a href="quiz.html">Training</a>
-
+    <a href="Tickets.html">Tickets</a>
+    <a href="Copy of Forms.html">Forms</a>
+    <a href="Training.html">Training</a>
   </nav>
 
-  <div class="container">
-    <section id="contact">
-      <h2>Mobile Rual/Wetaskwin Cheat Sheet</h2>
-      <p>
-        Here is the basic bare bones info. Complied stuff so you don't have to look up things or for new folks to get a leg up. 
-      </p>
+  <main class="container essentials-page">
+    <section id="contact" class="essentials-hero">
+      <p class="eyebrow">Mobile Reference</p>
+      <h2>CZ Mobile</h2>
+      <p>Mobile shift basics, vehicle and call sign references, site coverage notes, form assessments, and the Central Zone map.</p>
     </section>
 
-    <section class="about-pg">
-      <div id="description">
-        <h1>----------------------------------</h1>
-        <div id="accordion">
+    <section class="essentials-dashboard" aria-label="CZ Mobile quick cards">
+      <article class="essentials-mini-card"><span class="mini-icon">✓</span><h3>Shift Basics</h3><p>Gear, Teams calls, PSCC sign-on, pre-trips, and receipts.</p></article>
+      <article class="essentials-mini-card"><span class="mini-icon">#</span><h3>Call Signs</h3><p>Quick reference for Charlie call signs and vehicle numbers.</p></article>
+      <article class="essentials-mini-card"><span class="mini-icon">G</span><h3>Guard Sites</h3><p>Static guard coverage sites and hours.</p></article>
+      <article class="essentials-mini-card"><span class="mini-icon">Map</span><h3>Zone Map</h3><p>Clickable map for coverage and location reference.</p></article>
+    </section>
 
-            <h3>Every Shift Basics</h3>
-          <div class="accordion-panel" id="exterior-panel">
-            <p>- Gear up (keys, notebook, phone and radio)</p>
-            <p>- Confrence Call on Teams (06:40 and 18:45)</p>
-            <p>- Sign on with PSCC (Name, Callsign and Vehicle #)</p>
-            <p>- Submit Pre-Trip inspection on Teams</p>
-            <p>- Submit receipts on Teams (Fuel, car wash etc)</p>
-            <p>- NIGHTS - Paladin confrence call (at 2345, one PO leads with a safty topic to talk about)</p>
+    <section class="about-pg essentials-card">
+      <h1>CZ Mobile Guide</h1>
+      <div id="accordion" class="essentials-accordion">
+        <h3>Zone Map</h3>
+        <div class="accordion-panel">
+          <div class="info-grid two-col">
+            <article class="info-box"><h4>Central Zone Mobile Map</h4><p>This map is included as a quick visual reference for Central Zone mobile coverage, start sites, static sites, Paladin coverage, and locations no longer covered by AHS.</p><p class="note">Click the map to expand it for easier reading.</p></article>
+            <img alt="Central Zone mobile map" class="map-image expandable-img" src="pics/zone_map.jpg" />
           </div>
+        </div>
 
-            <h3>Vehicle Numbers</h3>
-          <div class="accordion-panel" id="upcoming-panel">
-            <p>Olds: 2749, 2752</p>
-            <p>Red Deer: 2278, 2797</p>
-            <p>Stettler: 2751, 2748</p>
-            <p>Lacombe: 2762 (RD loan), 2279, 2798</p>
-            <p>Wetaskiwin: 2750, 2796 Lacombe loan</p>
-            <p>Leduc: 2753</p>
-            <p>Sheerwood: 2795</p>
+        <h3>Every Shift Basics</h3>
+        <div class="accordion-panel">
+          <div class="info-grid two-col">
+            <article class="info-box"><h4>Start of Shift</h4><ul><li>Gear up with keys, notebook, phone, and radio.</li><li>Join the Teams conference call at 06:40 or 18:45.</li><li>Sign on with PSCC using name, call sign, and vehicle number.</li><li>Submit the pre-trip inspection on Teams.</li><li>Submit receipts on Teams, including fuel or car wash receipts.</li></ul></article>
+            <article class="info-box highlight-box"><h4>Night Shift</h4><p>Attend the Paladin conference call at 23:45. One Peace Officer leads with a safety topic for discussion.</p></article>
           </div>
+        </div>
 
-          <h3>Call Signs</h3>
-          <div class="accordion-panel" id="exterior-panel">
-            <p>Charile 1: Team Lead / Acting Team Lead</p>
-            <p>Charile 2: Olds</p>
-            <p>Charile 3: Red Deer</p>
-            <p>Charile 4: Wetaskiwin</p>
-            <p>Charile 5: Lacombe</p>
-            <p>Charile 6: Leduc</p>
-            <p>Charile 7: Sherwood Park</p>
-            <p>Charile 8: Stettler</p>
+        <h3>Vehicle Numbers</h3>
+        <div class="accordion-panel">
+          <div class="info-grid three-col">
+            <article class="info-box"><h4>Olds</h4><p>2749, 2752</p></article>
+            <article class="info-box"><h4>Red Deer</h4><p>2278, 2797</p></article>
+            <article class="info-box"><h4>Stettler</h4><p>2751, 2748</p></article>
+            <article class="info-box"><h4>Lacombe</h4><p>2762, 2279, 2798</p></article>
+            <article class="info-box"><h4>Wetaskiwin</h4><p>2750, 2796</p></article>
+            <article class="info-box"><h4>Leduc / Sherwood</h4><p>Leduc: 2753<br>Sherwood Park: 2795</p></article>
           </div>
+        </div>
 
-          <h3>Sites with Gaurds</h3>
-          <div class="accordion-panel" id="exterior-panel">
-            <h3>Rimbey: 1900-0700</h3>
-            <h3>Rocky: 1900-0700</h3>
-            <h3>Drumheller: 1900-0700</h3>
-            <h3>Hannah: 1900-0700</h3>
-            <h3>Lacombe: 1900-0700</h3>
-            <h3>Drayton Valley: 1900-0700</h3>
-            <h3>Didsberry: 1900-0700</h3>
-            <h3>Ponoka: 24/7</h3>
+        <h3>Call Signs</h3>
+        <div class="accordion-panel">
+          <div class="info-grid three-col">
+            <article class="info-box"><h4>Charlie 1</h4><p>Team Lead / Acting Team Lead</p></article>
+            <article class="info-box"><h4>Charlie 2</h4><p>Olds</p></article>
+            <article class="info-box"><h4>Charlie 3</h4><p>Red Deer</p></article>
+            <article class="info-box"><h4>Charlie 4</h4><p>Wetaskiwin</p></article>
+            <article class="info-box"><h4>Charlie 5</h4><p>Lacombe</p></article>
+            <article class="info-box"><h4>Charlie 6</h4><p>Leduc</p></article>
+            <article class="info-box"><h4>Charlie 7</h4><p>Sherwood Park</p></article>
+            <article class="info-box"><h4>Charlie 8</h4><p>Stettler</p></article>
           </div>
+        </div>
 
-            <h3>Team Assignments</h3>
-          <div class="accordion-panel" id="exterior-panel">
-            <p>Alpha (Bri) - Blue Binders and notebooks</p>
-            <p>Bravo (Parker)- Duress Buttons</p>
-            <p>Charile (Broderson)- Fire Drills</p>
-            <p>Delta (Davies/Clark)- Vehicles, Equipment, SOP's</p>
-            </h3>
+        <h3>Sites with Guards</h3>
+        <div class="accordion-panel">
+          <div class="info-grid three-col">
+            <article class="info-box"><h4>1900–0700</h4><p>Rimbey, Rocky, Drumheller, Hanna, Lacombe, Drayton Valley, and Didsbury.</p></article>
+            <article class="info-box"><h4>24/7</h4><p>Ponoka.</p></article>
+            <article class="info-box"><h4>Reminder</h4><p>Confirm current coverage through the pass-on, F Drive, or TL if unsure.</p></article>
           </div>
+        </div>
 
-          <h3>Form Assessments</h3>
-          <div class="accordion-panel" id="exterior-panel">
-            <p>Assess if they individual needs a Security Watch. If they seem agressive or likely to leave, have the staff call for a Security Watch. 
-                Make sure you (or the gaurd) do a Perspective file. Only do narrative unless you went hands on or something. Also don't forget to
-                do a search of the individual/belongings (Many people carry weapons).
-                Message the TL the file number. Treat AGTA (Adult Gaurdian Trustie Act) forms the same as a Form 1.
-            </p>
+        <h3>Team Assignments</h3>
+        <div class="accordion-panel">
+          <div class="info-grid two-col">
+            <article class="info-box"><h4>Alpha</h4><p>Blue binders and notebooks.</p></article>
+            <article class="info-box"><h4>Bravo</h4><p>Duress buttons.</p></article>
+            <article class="info-box"><h4>Charlie</h4><p>Fire drills.</p></article>
+            <article class="info-box"><h4>Delta</h4><p>Vehicles, equipment, and SOPs.</p></article>
           </div>
+        </div>
 
-          <h3>Phone Numbers and Codes</h3>
-          <div class="accordion-panel" id="exterior-panel">
-            <p>Not posting here, security reassons. Each site phone should have a pick of codes and phone numbers on it</p>
-            <p>If not, you can find the info on the F-Drive</p>
+        <h3>Form Assessments</h3>
+        <div class="accordion-panel">
+          <div class="info-grid two-col">
+            <article class="info-box"><h4>Assessment</h4><p>Assess whether the individual needs a security watch. If they seem aggressive or likely to leave, have staff call for a security watch.</p><p>Complete a Perspective file, or ensure the guard completes one if applicable.</p></article>
+            <article class="info-box"><h4>Documentation</h4><p>A narrative is only usually needed if you go hands-on or something significant occurs. Message the TL the file number.</p><p class="note">Do not forget to search the individual and belongings when appropriate. Many people carry weapons.</p></article>
+            <article class="info-box"><h4>AGTA Forms</h4><p>Treat Adult Guardianship and Trusteeship Act forms the same as a Form 1 for assessment and documentation purposes.</p></article>
+          </div>
+        </div>
+
+        <h3>Phone Numbers and Codes</h3>
+        <div class="accordion-panel">
+          <div class="info-grid two-col">
+            <article class="info-box"><h4>Security Note</h4><p>Phone numbers and codes are not posted here for security reasons.</p></article>
+            <article class="info-box"><h4>Where to Find Them</h4><p>Each site phone should have a picture of the codes and phone numbers. If not, check the Share Drive (if you don't have ask TL to send you the link).</p></article>
           </div>
         </div>
       </div>
     </section>
+  </main>
 
-    <div class="sponsor-bubble">
-    <h3>Wetaskiwin Static Info</h3>
-      <p>Moruge stuff?</p>
-      <p>Pass on?</p>
+  <div aria-hidden="true" class="image-lightbox" id="siteImageLightbox">
+    <div class="image-lightbox-content">
+      <div class="image-lightbox-toolbar">
+        <button id="siteImageLightboxClose" type="button">Close</button>
+      </div>
+      <img alt="Expanded image" id="siteImageLightboxImg" src="" />
     </div>
-
-  <!--Car stuff-->
-  <!--Sites vists-->
-  <!--Teams-->
-  <!--Notebooks per site-->
-  <!--Roadside accident (Acting as a citizen)-->
-  <!--Ponoka Transfers-->
-  <!--Paladins on which sites-->
-  <!--Daily stuff (PSCC, Recipts, Confernce calls, Pass on)-->
-  <!--Site map-->
-  <!--AGTA ponoka-->
-  <!--Form Assessments-->
-  <!--Charlie Signs/Vehicle Numbers-->
-
-  <!--
-
-  Injuires 
-  File MSN
-  Blood contamination Number
-  Triage for WCB (papertrail)
-
-
-  Full time Bennies 
-  PL leave
-  Banked Stat
-  Sick time
-  MHL
-  Flex account
-  Pay bumps
-  STAT days and super STAT
-  Equipment Claims
-
-
-  Red Deer Offsites 
-
-  
-  -->
-
-
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
@@ -165,10 +139,51 @@
     $(function () {
       $("#accordion").accordion({
         collapsible: true,
-        heightStyle: "content"
+        heightStyle: "content",
+        active: false
       });
     });
   </script>
-</body>
 
+  <script>
+    (() => {
+      const lightbox = document.getElementById('siteImageLightbox');
+      const lightboxImg = document.getElementById('siteImageLightboxImg');
+      const closeBtn = document.getElementById('siteImageLightboxClose');
+      if (!lightbox || !lightboxImg || !closeBtn) return;
+
+      const close = () => {
+        lightbox.classList.remove('is-open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        lightboxImg.src = '';
+      };
+
+      document.querySelectorAll('.expandable-img').forEach((img) => {
+        img.setAttribute('tabindex', '0');
+        img.setAttribute('title', 'Click to expand');
+        img.addEventListener('click', () => {
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt || 'Expanded image';
+          lightbox.classList.add('is-open');
+          lightbox.setAttribute('aria-hidden', 'false');
+        });
+        img.addEventListener('keydown', (event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            img.click();
+          }
+        });
+      });
+
+      closeBtn.addEventListener('click', close);
+      lightbox.addEventListener('click', (event) => {
+        if (event.target === lightbox || event.target === lightboxImg) close();
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && lightbox.classList.contains('is-open')) close();
+      });
+    })();
+  </script>
+
+</body>
 </html>

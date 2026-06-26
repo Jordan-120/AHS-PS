@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,86 +7,58 @@
   <link rel="icon" type="image/jpeg" href="img/SSlogo.jpg" />
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
   <link rel="stylesheet" href="stylesheet.css" />
-  <style>
-    .content-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 2rem;
-      margin: 2rem auto;
-      max-width: 1200px;
-      padding: 0 2rem;
-    }
-
-    .info-box {
-      flex: 1;
-      background-color: #2a2a2a;
-      border: 2px solid #f4b400;
-      padding: 1.5rem;
-      color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    }
-
-    .info-box h3 {
-      margin-top: 0;
-      color: #f4b400;
-    }
-
-    .info-box ul {
-      padding-left: 1.2rem;
-      list-style-type: disc;
-    }
-
-    .flowchart-img {
-      flex: 1;
-      text-align: center;
-    }
-
-    .flowchart-img img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-      border: 1px solid #ccc;
-    }
-  </style>
 </head>
-
 <body>
-
   <header>
     <h1>AHS Protective Services Unofficial Guide</h1>
-    <p>Reports SOP</p>
+    <p>Reports, narratives, STATs, and color code file requirements</p>
   </header>
-
   <nav>
-    <a href="index.html" class="active">Appointment</a>
-    <a href="Red Deer.html">Red Deer</a>
-    <a href="Rurals.html">Rural</a>
+    <a href="index.html">Authorities</a>
+    <a href="Common Duties.html">Essentials</a>
+    <a href="Red Deer.html">RDRH</a>
+    <a href="Rurals.html">CZ Mobile</a>
     <a href="CCMHBI.html">CCMHBI</a>
-    <a href="Common Duties.html">Basics</a>
+    <a href="reports.html" class="active">Reports</a>
+    <a href="Tickets.html">Tickets</a>
     <a href="Copy of Forms.html">Forms</a>
-    <a href="reports.html">Reports</a>
-    <a href="quiz.html">Training</a>
+    <a href="Training.html">Training</a>
   </nav>
-
-  <div class="content-row">
-    <div class="info-box">
-      <h3>New Narrative Requirements Effective April 01, 2025</h3>
-      <ul>
-        <li>Narratives will only be required when Protective Services members are involved in an arrest, use of force, hands on applications, following critical incidents, death or serious injury process, property damage, MHA transfers, fines, and trespass orders.</li>
-        <li><strong>IMPORTANT:</strong> If you feel a scenario requires a narrative, you have the duty to discuss with your TL or Manager and feel free to err on the side of caution and document the scenario.</li>
-        <li>Officer notebooks and notes in officer notebooks are still required and can be used as future references for historical Protective Services incidents. No change in this practice.</li>
-      </ul>
-    </div>
-
-    <div class="flowchart-img">
-      <img src="pics/FlowChart.jpg" alt="Narrative Guidelines Flowchart" />
-    </div>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <main class="container guide-page">
+    <section id="contact" class="guide-hero">
+      <p class="eyebrow">Documentation</p>
+      <h2>Reports</h2>
+      <p>Quick reference for narrative requirements, color code responses, STAT responses, and documentation reminders.</p>
+    </section>
+    <section class="guide-dashboard">
+      <article class="guide-card"><h3>Narratives</h3><p>Narratives are required for arrests, use of force, hands-on applications, critical incidents, death or serious injury processes, property damage, MHA transfers, fines, and trespass orders.</p></article>
+      <article class="guide-card"><h3>When Unsure</h3><p>If a scenario feels like it should be documented, discuss it with a TL or Manager and err on the side of caution.</p></article>
+      <article class="guide-card"><h3>Notebook Notes</h3><p>Officer notebooks remain required and may be used as future reference for Protective Services incidents.</p></article>
+    </section>
+    <section class="about-pg essentials-card">
+      <h1 class="page-clean-title">Report References</h1>
+      <div class="info-grid two-col">
+        <article class="info-box"><h4>Narrative Guidelines Flowchart</h4><p>Use the flowchart as a quick check for when a narrative is required.</p><img class="report-image expandable-img" src="pics/FlowChart.jpg" alt="Narrative Guidelines Flowchart"></article>
+        <article class="info-box"><h4>Color Codes</h4><p>Use the color code reference when documenting or reviewing color code responses.</p><img class="report-image expandable-img" src="pics/ColorCodes.jpg" alt="Color code response reference"><p class="footnote">All STAT and color code responses require a file, even if false.</p></article>
+      </div>
+    </section>
+  </main>
+  <div class="image-lightbox" id="siteImageLightbox" aria-hidden="true"><div class="image-lightbox-content"><div class="image-lightbox-toolbar"><button type="button" id="siteImageLightboxClose">Close</button></div><img id="siteImageLightboxImg" src="" alt="Expanded image"></div></div>
+  <script>
+    (() => {
+      const lightbox = document.getElementById('siteImageLightbox');
+      const lightboxImg = document.getElementById('siteImageLightboxImg');
+      const closeBtn = document.getElementById('siteImageLightboxClose');
+      const close = () => { lightbox.classList.remove('is-open'); lightbox.setAttribute('aria-hidden', 'true'); lightboxImg.src = ''; };
+      document.querySelectorAll('.expandable-img').forEach((img) => {
+        img.setAttribute('tabindex', '0'); img.setAttribute('title', 'Click to expand');
+        img.addEventListener('click', () => { lightboxImg.src = img.src; lightboxImg.alt = img.alt || 'Expanded image'; lightbox.classList.add('is-open'); lightbox.setAttribute('aria-hidden', 'false'); });
+        img.addEventListener('keydown', (event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); img.click(); } });
+      });
+      closeBtn.addEventListener('click', close);
+      lightbox.addEventListener('click', (event) => { if (event.target === lightbox || event.target === lightboxImg) close(); });
+      document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && lightbox.classList.contains('is-open')) close(); });
+    })();
+  </script>
 </body>
-
 </html>

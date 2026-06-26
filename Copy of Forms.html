@@ -4,54 +4,218 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ASH</title>
+  <title>Forms</title>
   <link rel="icon" type="image/jpeg" href="img/SSlogo.jpg" />
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
   <link rel="stylesheet" href="stylesheet.css" />
 </head>
 
 <body>
-
   <header>
-    <h1>AHS Protective Serivces Unoffical Guide</h1>
-    <p>Ponoka Centenial Center</p>
+    <h1>AHS Protective Services Unofficial Guide</h1>
+    <p>Forms, printable references, and disclosure resources</p>
   </header>
 
   <nav>
-    <a href="index.html" class="active">Appointment</a>
-    <a href="Red Deer.html">Red Deer</a>
-    <a href="Rurals.html">Rural</a>
+    <a href="index.html">Authorities</a>
+    <a href="Common Duties.html">Essentials</a>
+    <a href="Red Deer.html">RDRH</a>
+    <a href="Rurals.html">CZ Mobile</a>
     <a href="CCMHBI.html">CCMHBI</a>
-    <a href="Common Duties.html">Basics</a>
-    <a href="Copy of Forms.html">Forms</a>
     <a href="reports.html">Reports</a>
-    <a href="quiz.html">Training</a>
-   
-    <!--Index Auth-->
-    <!--Red Deer-->
-    <!--CCMHBI-->
-    <!--Ruals-->
-    <!--Reports-->
-    <!--Common Duties-->
-    <!--Training-->
-    <!--Copy of Forms-->
-
+    <a href="Tickets.html">Tickets</a>
+    <a href="Copy of Forms.html" class="active">Forms</a>
+    <a href="Training.html">Training</a>
   </nav>
 
-  <h1>Coming Soon!</h1>
-  <h2>Download Form 10</h2>
-  <h2>Download Tresspass Form</h2>
-  <h2>Download 10-Codes sheet</h2>
+  <main class="forms-page">
+    <section id="contact" class="forms-intro">
+      <h2>Forms</h2>
+      <p>Click any form card to open it in the document pad. From there, you can view, print, or open the file in a new tab.</p>
+    </section>
 
+    <section class="forms-board" aria-label="Forms and printable references">
+      <button class="form-card" type="button" data-doc="docs/Form 10.pdf" data-title="Form 10.pdf">
+        <span class="form-card-title">Form 10.pdf</span>
+        <span class="form-card-preview"><img src="pics/forms/form10.png" alt="Form 10 violation ticket thumbnail" /></span>
+      </button>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+      <button class="form-card" type="button" data-doc="docs/Personal Effects.pdf" data-title="Personal Effects.pdf">
+        <span class="form-card-title">Personal Effects.pdf</span>
+        <span class="form-card-preview"><img src="pics/forms/personal-effects.png" alt="Personal effects record thumbnail" /></span>
+      </button>
+
+      <button class="form-card" type="button" data-doc="docs/Tresspass.pdf" data-title="Trespass.pdf">
+        <span class="form-card-title">Trespass.pdf</span>
+        <span class="form-card-preview"><img src="pics/forms/trespass.png" alt="Trespass notice thumbnail" /></span>
+      </button>
+
+      <figure class="form-static-image law-disclosure-guide">
+        <img
+          id="lawDisclosureImage"
+          class="expandable-form-image"
+          src="pics/LawDisclosureChart.jpg"
+          alt="Law enforcement disclosure request guide"
+          title="Click to expand"
+        />
+      </figure>
+
+      <button class="form-card law-disclosure-card" type="button" data-doc="docs/Law Enforcement Disclosure.pdf" data-title="Law Enforcement Disclosure.pdf">
+        <span class="form-card-title">Law Enforcement Disclosure.pdf</span>
+        <span class="form-card-preview"><img src="pics/forms/law-disclosure.png" alt="Law Enforcement Disclosure form thumbnail" /></span>
+      </button>
+
+      <button class="form-card" type="button" data-doc="docs/Vest Order Sheet.pdf" data-title="Vest Order Sheet.pdf">
+        <span class="form-card-title">Vest Order Sheet.pdf</span>
+        <span class="form-card-preview"><img src="pics/forms/vest-order.png" alt="Vest order sheet thumbnail" /></span>
+      </button>
+
+      <button class="form-card" type="button" data-doc="docs/Driving Authorization Application 2022_NEW.pdf" data-title="Driving Authorization Application.pdf">
+        <span class="form-card-title">Driving Authorization Application.pdf</span>
+        <span class="form-card-preview"><img src="pics/forms/driving-auth.png" alt="Driving authorization application thumbnail" /></span>
+      </button>
+
+      <button class="form-card" type="button" data-doc="docs/10-Codes.pdf" data-title="10-Codes">
+        <span class="form-card-title">10-Codes</span>
+        <span class="form-card-preview"><img src="pics/forms/10-codes.png" alt="10-Codes printable reference thumbnail" /></span>
+      </button>
+
+      <p class="forms-coming-soon">More coming soon (including gear order sheet)</p>
+    </section>
+  </main>
+
+  <div class="document-pad" id="documentPad" aria-hidden="true">
+    <div class="document-pad-window" role="dialog" aria-modal="true" aria-labelledby="documentPadTitle">
+      <div class="document-pad-toolbar">
+        <h2 id="documentPadTitle">Document</h2>
+        <div class="document-pad-actions">
+          <a id="documentPadOpen" href="#" target="_blank" rel="noopener">Open in new tab</a>
+          <button type="button" id="documentPadPrint">Print</button>
+          <button type="button" id="documentPadClose">Close</button>
+        </div>
+      </div>
+      <iframe id="documentPadFrame" title="Document preview"></iframe>
+    </div>
+  </div>
+
+  <div class="image-lightbox" id="imageLightbox" aria-hidden="true">
+    <button type="button" class="image-lightbox-close" id="imageLightboxClose" aria-label="Close expanded image">&times;</button>
+    <img id="imageLightboxImg" src="" alt="Expanded view" />
+  </div>
+
+  <style>
+    .expandable-form-image {
+      cursor: zoom-in;
+    }
+
+    .image-lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: rgba(0, 0, 0, 0.88);
+    }
+
+    .image-lightbox.is-open {
+      display: flex;
+    }
+
+    .image-lightbox img {
+      max-width: 95vw;
+      max-height: 92vh;
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+      background: #fff;
+      cursor: zoom-out;
+    }
+
+    .image-lightbox-close {
+      position: fixed;
+      top: 16px;
+      right: 24px;
+      z-index: 10000;
+      border: none;
+      background: transparent;
+      color: white;
+      font-size: 42px;
+      line-height: 1;
+      cursor: pointer;
+    }
+  </style>
+
   <script>
-    $(function () {
-      $("#accordion").accordion({
-        collapsible: true,
-        heightStyle: "content"
+    const documentPad = document.getElementById('documentPad');
+    const documentPadFrame = document.getElementById('documentPadFrame');
+    const documentPadTitle = document.getElementById('documentPadTitle');
+    const documentPadOpen = document.getElementById('documentPadOpen');
+
+    const closeDocumentPad = () => {
+      documentPad.classList.remove('is-open');
+      documentPad.setAttribute('aria-hidden', 'true');
+      documentPadFrame.src = 'about:blank';
+    };
+
+    document.querySelectorAll('.form-card[data-doc]').forEach((card) => {
+      card.addEventListener('click', () => {
+        const doc = card.dataset.doc;
+        const title = card.dataset.title || 'Document';
+        documentPadTitle.textContent = title;
+        documentPadFrame.src = doc;
+        documentPadOpen.href = doc;
+        documentPad.classList.add('is-open');
+        documentPad.setAttribute('aria-hidden', 'false');
       });
+    });
+
+    document.getElementById('documentPadClose').addEventListener('click', closeDocumentPad);
+
+    documentPad.addEventListener('click', (event) => {
+      if (event.target === documentPad) closeDocumentPad();
+    });
+
+    document.getElementById('documentPadPrint').addEventListener('click', () => {
+      try {
+        documentPadFrame.contentWindow.focus();
+        documentPadFrame.contentWindow.print();
+      } catch (error) {
+        window.open(documentPadOpen.href, '_blank', 'noopener');
+      }
+    });
+
+    const lawDisclosureImage = document.getElementById('lawDisclosureImage');
+    const imageLightbox = document.getElementById('imageLightbox');
+    const imageLightboxImg = document.getElementById('imageLightboxImg');
+    const imageLightboxClose = document.getElementById('imageLightboxClose');
+
+    const closeImageLightbox = () => {
+      imageLightbox.classList.remove('is-open');
+      imageLightbox.setAttribute('aria-hidden', 'true');
+      imageLightboxImg.src = '';
+    };
+
+    lawDisclosureImage.addEventListener('click', () => {
+      imageLightboxImg.src = lawDisclosureImage.src;
+      imageLightboxImg.alt = lawDisclosureImage.alt;
+      imageLightbox.classList.add('is-open');
+      imageLightbox.setAttribute('aria-hidden', 'false');
+    });
+
+    imageLightboxClose.addEventListener('click', closeImageLightbox);
+
+    imageLightbox.addEventListener('click', (event) => {
+      if (event.target === imageLightbox || event.target === imageLightboxImg) {
+        closeImageLightbox();
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        if (documentPad.classList.contains('is-open')) closeDocumentPad();
+        if (imageLightbox.classList.contains('is-open')) closeImageLightbox();
+      }
     });
   </script>
 </body>
