@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CCMHBI</title>
+  <link rel="icon" type="image/jpeg" href="img/SSlogo.jpg" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body>
+  <header>
+    <h1>AHS Protective Services Unofficial Guide</h1>
+    <p>CCMHBI Quick Reference</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Authorities</a>
+    <a href="Common Duties.html">Essentials</a>
+    <a href="Red Deer.html">RDRH</a>
+    <a href="Rurals.html">CZ Mobile</a>
+    <a href="CCMHBI.html" class="active">CCMHBI</a>
+    <a href="reports.html">Reports</a>
+    <a href="Tickets.html">Tickets</a>
+    <a href="Copy of Forms.html">Forms</a>
+    <a href="Training.html">Training</a>
+  </nav>
+
+  <main class="container essentials-page">
+    <section id="contact" class="essentials-hero">
+      <p class="eyebrow">Site Reference</p>
+      <h2>CCMHBI</h2>
+      <p>Site-specific reminders for admissions, safekeeping, shift handover, pass-on, and morgue processes.</p>
+    </section>
+
+    <section class="essentials-dashboard" aria-label="CCMHBI quick cards">
+      <article class="essentials-mini-card"><h3>Morning Shift</h3><p>0700-1900</p></article>
+      <article class="essentials-mini-card"><h3>Evening Shift</h3><p>1500-0300</p></article>
+      <article class="essentials-mini-card"><h3>Night Shift</h3><p>1900-0700</p></article>
+      <article class="essentials-mini-card"><h3>Mobile</h3><p>May stop by occasionally or if called for assistance.</p></article>
+    </section>
+
+    <section class="about-pg essentials-card">
+      <h1>CCMHBI Guide</h1>
+      <div id="accordion" class="essentials-accordion">
+
+        <h3>Map</h3>
+        <div class="accordion-panel">
+          <div class="info-grid two-col">
+            <article class="info-box"><h4>Cen Map 1</h4><p>Clearer maps coming soon.</p><p class="note">Click the map to expand it for easier reading.</p></article>
+            <article class="map-card rol-card"><img alt="Cen Map" class="resource-image expandable-img" src="pics/Cen map.jpg" /></article>
+          </div>
+        </div>
+
+        <h3>Admissions</h3>
+        <div class="accordion-panel">
+          <div class="info-grid two-col">
+            <article class="info-box"><h4>Voluntary</h4><p>Search / belongings search, escort to unit, no Perspective file required.</p></article>
+            <article class="info-box"><h4>Form 1</h4><p>Search / belongings search, escort to unit, and Perspective file summary only.</p></article>
+            <article class="info-box"><h4>Form 8</h4><p>Search / belongings search, escort to unit, and Perspective file summary only.</p></article>
+            <article class="info-box"><h4>Form 10</h4><p>Search / belongings search, escort to unit, and Perspective file with Form 10 attached.</p></article>
+            <article class="info-box"><h4>Form 23</h4><p>Search / belongings search, escort to unit, and Perspective file summary only.</p></article>
+          </div>
+        </div>
+
+        <h3>Safekeeping</h3>
+        <div class="accordion-panel">
+          <div class="info-grid two-col">
+            <article class="info-box"><h4>Items</h4><ul><li>Log items in the safekeeping book.</li><li>Complete the required safekeeping entry.</li><li>Place items in the red cabinets accordingly.</li><li>Give the receipt page to the unit associated with the patient.</li></ul></article>
+            <article class="info-box"><h4>Money</h4><ul><li>Log money in the safekeeping book in the safe.</li><li>Complete the required safekeeping entry.</li><li>Place items in the red cabinets or safe accordingly.</li><li>Give the receipt page to the unit associated with the patient.</li></ul></article>
+            <article class="info-box highlight-box"><h4>Important Notes</h4><ul><li>Do not edit sheets once completed.</li><li>No partial releases. Release everything and re-log if needed.</li><li>Editing sheets can be perceived as possible theft.</li><li>Do not hold illegal items, including illegal drugs or open liquor.</li><li>Do not release items unless the patient provides the receipt.</li></ul></article>
+          </div>
+        </div>
+
+        <h3>Pass-On Information</h3>
+        <div class="accordion-panel">
+          <div class="info-grid two-col">
+            <article class="info-box"><h4>Conference Call</h4><p>Attend the conference call at 06:15.</p></article>
+            <article class="info-box"><h4>Pass-On / Email</h4><p>Update the pass-on and email the Team Lead as required.</p></article>
+          </div>
+        </div>
+
+        <h3>Morgue</h3>
+        <div class="accordion-panel">
+          <div class="info-grid two-col">
+            <article class="info-box"><h4>Location</h4><p>The morgue is on the lower level near the maintenance bay / housekeeping area.</p></article>
+            <article class="info-box"><h4>Morgue Out</h4><ul><li>Check with Admissions for the funeral home's arrival time.</li><li>Wait at the loading bay near geriatrics for the funeral home vehicle.</li><li>Escort funeral home staff down to the morgue.</li><li>Escort them back to the vehicle with the body.</li><li>No paperwork is required unless otherwise directed.</li></ul></article>
+            <article class="info-box"><h4>Fire Alarm Pull Station</h4><p>If an alarm is pulled, check whether it is real. If it is false, quickly reset the pull station when safe to do so.</p><p class="note">If the station is not reset promptly, it can complicate the response and system status.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Image enlargement lightbox -->
+  <div aria-hidden="true" class="image-lightbox" id="siteImageLightbox">
+    <div class="image-lightbox-content">
+      <div class="image-lightbox-toolbar">
+        <button id="siteImageLightboxClose" type="button">Close</button>
+      </div>
+      <img alt="Expanded image" id="siteImageLightboxImg" src="" />
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script>
+    $(function () {
+      $("#accordion").accordion({
+        collapsible: true,
+        heightStyle: "content",
+        active: false
+      });
+    });
+  </script>
+
+  <!-- Map enlargement functionality -->
+  <script>
+    (() => {
+      const lightbox = document.getElementById('siteImageLightbox');
+      const lightboxImg = document.getElementById('siteImageLightboxImg');
+      const closeBtn = document.getElementById('siteImageLightboxClose');
+
+      if (!lightbox || !lightboxImg || !closeBtn) return;
+
+      const close = () => {
+        lightbox.classList.remove('is-open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        lightboxImg.src = '';
+      };
+
+      document.querySelectorAll('.expandable-img').forEach((img) => {
+        img.setAttribute('tabindex', '0');
+        img.setAttribute('title', 'Click to expand');
+
+        img.addEventListener('click', () => {
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt || 'Expanded image';
+          lightbox.classList.add('is-open');
+          lightbox.setAttribute('aria-hidden', 'false');
+        });
+
+        img.addEventListener('keydown', (event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            img.click();
+          }
+        });
+      });
+
+      closeBtn.addEventListener('click', close);
+
+      lightbox.addEventListener('click', (event) => {
+        if (event.target === lightbox || event.target === lightboxImg) close();
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && lightbox.classList.contains('is-open')) close();
+      });
+    })();
+  </script>
+
+</body>
+</html>

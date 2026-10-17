@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+(function() {
+    const password = "AHS@120";
+    let userInput = prompt("Enter password to access this site:");
+    if (userInput !== password) {
+        document.body.innerHTML = "<h1>Access Denied</h1>";
+    }
+})();
+</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Authorities</title>
+  <link rel="icon" type="image/jpeg" href="img/SSlogo.jpg" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" href="stylesheet.css" />
+</head>
+
+<body>
+  <header>
+    <h1>AHS Protective Services Unofficial Guide</h1>
+    <p>Authority summary and appointment restrictions</p>
+  </header>
+
+  <nav>
+    <a href="index.html" class="active">Authorities</a>
+    <a href="Common Duties.html">Essentials</a>
+    <a href="Red Deer.html">RDRH</a>
+    <a href="Rurals.html">CZ Mobile</a>
+    <a href="CCMHBI.html">CCMHBI</a>
+    <a href="reports.html">Reports</a>
+    <a href="Tickets.html">Tickets</a>
+    <a href="Copy of Forms.html">Forms</a>
+    <a href="Training.html">Training</a>
+  </nav>
+
+  <main class="container essentials-page">
+    <section id="contact" class="essentials-hero">
+      <p class="eyebrow">Appointment Authority</p>
+      <h2>Jurisdiction</h2>
+      <p>Throughout the Province of Alberta within a building, facility or space utilized by Alberta Health 
+        Services, Recovery Alberta, and/or those to whom Alberta Health Services is contracted on either 
+        a temporary or permanent basis, including adjacent property.</p>
+      <p>Within a vehicle utilized by Alberta Health Services for the purposes of providing security
+        during the transportation of an Alberta Health Services patient via Alberta Health Services'
+        transportation.</p>
+      <p>The jurisdiction of peace officers in Alberta is at all times subject to requirements set out in the
+        Public Security Peace Officer Program policy and Procedures Manual, as issued by the Director
+        of Law Enforcement.</p>
+      <p>This authorization does not include jurisdiction on municipal roadways, provincial roadways, 
+        Or an Indian Reserve.</p>
+    </section>
+
+    <section class="essentials-dashboard" aria-label="Authority quick cards">
+      <article class="essentials-mini-card">
+        <h3>Arrests</h3>
+        <p>You can arrest for your designated authorities where applicable or Criminal Indictable/Hybrid Offences. Arrested individuals are to be transferred to RCMP.
+          You do not have to follow through with charges if desired, RCMP can make that decision when they take over custody</p>
+      </article>
+      <article class="essentials-mini-card">
+        <h3>Detaining</h3>
+        <p>This is to hold someone from leaving during your investigation or to ensure identity (like for tickets).
+          You can place them in mechanical restraints at this point if required</p>
+      </article>
+      <article class="essentials-mini-card">
+        <h3>Form 10</h3>
+        <p>The individual is detained while you are doing your assessment.
+          Policy dictates to only Form 10 at designated facilities (Ex: RDRH and CCMHBI)</p>
+      </article>
+        <article class="essentials-mini-card">
+        <h3>Tickets</h3>
+        <p>See Ticket Tab</p>
+      </article>
+    </section>
+
+    <section class="about-pg essentials-card">
+      <h1>Authorities - Clean and Simple</h1>
+
+      <div id="accordion" class="essentials-accordion">
+        <h3>Provincial Offences Procedure Act</h3>
+        <div class="accordion-panel">
+          <div class="info-grid two-col">
+            <article class="info-box highlight-box">
+              <h4>Restriction</h4>
+              <p>No authority restriction listed for this Act.</p>
+            </article>
+            <article class="info-box"><h4>Link to Act</h4><a href="https://kings-printer.alberta.ca/1266.cfm?page=P34.cfm&leg_type=Acts&isbncln=9780779849819">Click here to see full Act</a>
+          </div>
+        </div>
+
+        <h3>Mental Health Act</h3>
+        <div class="accordion-panel">
+          <p class="panel-lead">Authority to enforce the Mental Health Act is restricted to the following sections.</p>
+          <div class="info-grid two-col">
+            <article class="info-box"><h4>Section 10 — Warrant for Apprehension</h4><p>A provincial court judge may issue a warrant authorizing peace officers to apprehend and transport an individual for examination at a designated facility.</p></article>
+            <article class="info-box"><h4>Section 12 — Apprehension Without Warrant</h4><p>Peace officers may apprehend and convey a person for assessment when there are reasonable and probable grounds related to serious mental health crisis, harm, or deterioration.</p><p class="note">While transporting, officers may detain, observe, care for, and control the person in custody.</p></article>
+            <article class="info-box"><h4>Section 20(4) — Time-Limited Certificates</h4><p>Sets time limits and renewal/reassessment requirements for medical certificates used to detain someone involuntarily.</p></article>
+            <article class="info-box"><h4>Section 21(1) — Order to Return Patient</h4><p>If a formal patient leaves without permission, an order may direct a peace officer to return them to the facility.</p></article>
+            <article class="info-box"><h4>Section 30 — Seclusion or Restraint</h4><p>Provides authority for hospital staff to use restraint or seclusion for patient safety in accordance with legislation and policy.</p></article>
+            <article class="info-box"><h4>Link to Act</h4><a href="https://kings-printer.alberta.ca/1266.cfm?page=m13.cfm&leg_type=Acts&isbncln=9780779864386">Click here to see full Act</a>
+          </div>
+        </div>
+
+        <h3>Public Health Act</h3>
+        <div class="accordion-panel">
+          <p class="panel-lead">Authority to enforce the Public Health Act is restricted to the following sections.</p>
+          <div class="info-grid two-col">
+            <article class="info-box"><h4>Section 40(1)(a) — Authority of Certificate</h4><p>A certificate authorizes a peace officer to apprehend the named person and convey them to the specified facility within the required time.</p></article>
+            <article class="info-box"><h4>Section 43(3) — Treatment After Release</h4><p>On receipt of an order, a peace officer may arrest without warrant and return the named person to the facility.</p></article>
+            <article class="info-box"><h4>Section 50(2) — Unauthorized Absence</h4><p>An order may authorize apprehension and return of a person to the facility.</p></article>
+            <article class="info-box"><h4>Section 70(2) — Destruction of Notice</h4><p>No person shall conceal, deface, destroy, or remove a public notice posted under the Act or regulation.</p></article>
+            <article class="info-box"><h4>Link to Act</h4><a href="https://kings-printer.alberta.ca/1266.cfm?page=P37.cfm&leg_type=Acts&isbncln=9780779860425">Click here to see full Act</a>
+          </div>
+        </div>
+
+        <h3>Traffic Safety Act</h3>
+        <div class="accordion-panel">
+          <div class="info-grid two-col">
+            <article class="info-box highlight-box"><h4>Restriction</h4><p>Authority is restricted to non-moving offences only.</p></article>
+            <article class="info-box"><h4>Link to Act</h4><a href="https://kings-printer.alberta.ca/1266.cfm?page=t06.cfm&leg_type=Acts&isbncln=9780779862900">Click here to see full Act</a>
+          </div>
+        </div>
+
+        <h3>Trespass to Premises Act</h3>
+        <div class="accordion-panel">
+          <div class="info-grid two-col">
+            <article class="info-box highlight-box"><h4>Trespass to Premises Act</h4><p>No authority restriction listed for this Act.</p></article>
+            <article class="info-box"><h4>Link to Act</h4><a href="https://kings-printer.alberta.ca/1266.cfm?page=T07.cfm&leg_type=Acts&isbncln=9780779844395">Click here to see full Act</a>
+          </div>
+        </div>
+
+        <h3>Petty Trespass Act</h3>
+        <div class="accordion-panel">
+          <div class="info-grid two-col">
+            <article class="info-box highlight-box"><h4>Petty Trespass Act</h4><p>No authority restriction listed for this Act.</p></article>
+            <article class="info-box"><h4>Link to Act</h4><a href="https://kings-printer.alberta.ca/1266.cfm?page=P11.cfm&leg_type=Acts&isbncln=9780779851966">Click here to see full Act</a>
+          </div>
+        </div>
+
+        <h3>Gaming, Liquor, and Cannabis Act</h3>
+        <div class="accordion-panel">
+          <p class="panel-lead">Authority to enforce the Gaming, Liquor, and Cannabis Act is restricted to the following areas.</p>
+          <div class="info-grid two-col">
+            <article class="info-box"><h4>Section 84 — Liquor in Vehicle</h4><p>Addresses consuming liquor in a vehicle unless the vehicle is being used as a temporary residence.</p></article>
+            <article class="info-box"><h4>Section 89 — Public Place</h4><p>Addresses use or consumption of liquor in public places, residences, licensed premises, designated picnic areas, and entertainment districts.</p></article>
+            <article class="info-box"><h4>Section 107 — Search and Seizure</h4><p>Allows warrantless search and seizure in specific circumstances involving liquor or cannabis in or near a vehicle or person.</p></article>
+            <article class="info-box"><h4>Section 108 — Abandoned Liquor or Cannabis</h4><p>Allows seizure and removal of abandoned liquor or cannabis where there is no apparent owner.</p></article>
+            <article class="info-box"><h4>Section 115 — Intoxicated Person in Public</h4><p>Allows taking an intoxicated person in a public place into custody instead of charging, subject to the section requirements.</p></article>
+            <article class="info-box"><h4>Regulation AR 143/96 — Section 87.1</h4><p>Addresses transportation of liquor in an open container or within easy access of the driver or occupants.</p></article>
+          <article class="info-box"><h4>Link to Act</h4><a href="https://kings-printer.alberta.ca/1266.cfm?page=G01.cfm&leg_type=Acts&isbncln=9780779864072">Click here to see full Act</a>
+          </div>
+        </div>
+
+        <h3>Tobacco, Smoking, and Vaping Reduction Act</h3>
+        <div class="accordion-panel">
+          <div class="info-grid two-col">
+            <article class="info-box highlight-box"><h4>Restriction</h4><p>No authority restriction listed for this Act.</p></article>
+            <article class="info-box"><h4>Link to Act</h4><a href="https://kings-printer.alberta.ca/1266.cfm?page=T03P8.cfm&leg_type=Acts&isbncln=9780779855360">Click here to see full Act</a>
+          </div>
+        </div>
+
+        <h3>Provincial Administrative Penalties Act</h3>
+        <div class="accordion-panel">
+          <div class="info-grid two-col">
+            <article class="info-box highlight-box"><h4>Restriction</h4><p>No authority restriction listed for this Act.</p></article>
+            <article class="info-box"><h4>Link to Act</h4><a href="https://kings-printer.alberta.ca/1266.cfm?page=p30p8.cfm&leg_type=Acts&isbncln=9780779837908">Click here to see full Act</a>
+          </div>
+        </div>
+
+        <h3>Criminal Code</h3>
+        <div class="accordion-panel">
+          <div class="info-grid two-col">
+            <article class="info-box highlight-box"><h4>Restriction</h4><p>You do not have Criminal Code under your authority. The powers to arrest performed as Citizen's Arrest (Section 494 CC).
+              This is for when you find a person committing an indictable offence aka serious offence (including hybrid, as hybrid is treated as indictable).</p></article>
+            <article class="info-box"><h4>Best use is Arresting for Mischief</h4><p>• Obstruct, interrupt, or interfere with the lawful use, enjoyment, or operation of property OR Obstruct or interfere with any person in the lawful use or enjoyment of property (there is more but these are the notable parts). It pretty much covers everything for someone causing issues or a disturbance</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script>
+    $(function () {
+      $("#accordion").accordion({
+        collapsible: true,
+        heightStyle: "content",
+        active: false
+      });
+    });
+  </script>
+
+</body>
+</html>
