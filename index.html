@@ -3,12 +3,20 @@
 <html lang="en">
 <head>
 <script>
-(function() {
-    const password = "AHS@120";
-    let userInput = prompt("Enter password to access this site:");
-    if (userInput !== password) {
-        document.body.innerHTML = "<h1>Access Denied</h1>";
-    }
+(function () {
+    const password = "Alberta";
+    let userInput;
+    do {
+        userInput = prompt("Enter password to access this site:");
+        if (userInput === null) {
+            document.write("<h1>Access Denied</h1>");
+            window.stop();
+            return;
+        }
+        if (userInput !== password) {
+            alert("Incorrect password. Please try again.");
+        }
+    } while (userInput !== password);
 })();
 </script>
   <meta charset="UTF-8" />
